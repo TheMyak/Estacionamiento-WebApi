@@ -1,6 +1,5 @@
 ﻿using Estacionamiento_WebApi.Entidades;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
 
 namespace Estacionamiento_WebApi
 {
@@ -12,5 +11,6 @@ namespace Estacionamiento_WebApi
         }
 
         public DbSet<Estacionamiento> Estacionamiento { get; set; }
+        public DbSet<Ticket> Ticket { get; set; }
     }
 }
